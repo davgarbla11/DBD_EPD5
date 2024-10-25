@@ -54,4 +54,14 @@ GROUP BY JOB_ID,DEPARTMENT_ID
 HAVING DEPARTMENT_ID > 40 AND SUM(SALARY) > 50000;
 
 
+-- EXPERIMENTO 6 --
+
+select end_date, count(*)
+from hr.job_history
+GROUP BY END_DATE;
+
+select END_DATE, START_DATE, count(*)
+from hr.job_history
+group by END_DATE, START_DATE;
+
 
